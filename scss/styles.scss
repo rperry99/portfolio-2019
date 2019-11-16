@@ -1,0 +1,65 @@
+// Variables
+$font-stack: Helvetica, sans-serif;
+$font-color: #333;
+$accent-color: #bada55;
+$darker-accent: darken($accent-color, 30%);
+$lighter-accent: lighten($accent-color, 30%);
+
+// General Styles
+* {
+  font-family: $font-stack;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Content Container
+.content {
+  width: 50%;
+  margin: 0 auto;
+}
+
+// Hero Section
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  & *:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background: $accent-color;
+    height: 50px;
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: solid 3px $darker-accent;
+    border-radius: 7px;
+    transition: width 300ms ease-in-out, transform 150ms ease-in-out;
+    &:visited,
+    &:link,
+    &:active {
+      color: $font-color;
+      text-decoration: none;
+    }
+    &:hover {
+      width: 102%;
+    }
+    &:active {
+      transform: translateY(5px);
+    }
+  }
+}
