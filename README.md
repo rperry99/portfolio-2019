@@ -8,3 +8,22 @@ I am using this project to practice the following:
 
 - Git Branches
 - SASS / SCSS
+
+## Work Log
+
+#### 11/16/19
+
+- Create Repo
+- Set Up files
+- Add SASS
+- Add header info
+
+---
+
+##### 11/17/19
+
+- Add background to hero
+- Add background to the hero text
+- Make hero responsive
+
+---

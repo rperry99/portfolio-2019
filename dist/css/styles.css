@@ -12,7 +12,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; }
+  height: 100vh;
+  background: linear-gradient(black, transparent 99%), url("../img/typing.gif");
+  background-size: cover;
+  background-position: center center; }
+  #hero .content {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border: solid 3px white;
+    border-radius: 7px; }
   #hero *:not(:last-child) {
     margin-bottom: 30px; }
   #hero h1 {
@@ -41,3 +49,19 @@
       width: 102%; }
     #hero a:active {
       transform: translateY(5px); }
+
+@media screen and (max-width: 768px) {
+  #hero a {
+    font-size: 1.2rem; } }
+
+@media screen and (max-width: 452px) {
+  .content {
+    width: 90%; } }
+
+@media screen and (max-width: 375px) {
+  #hero a {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 320px) {
+  #hero .content {
+    padding: 15px; } }
