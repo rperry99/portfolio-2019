@@ -25,6 +25,19 @@ $lighter-accent: lighten($accent-color, 30%);
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  // Test
+  background: linear-gradient(rgba(0, 0, 0, 1), transparent 99%),
+    url("../img/typing.gif");
+  background-size: cover;
+  background-position: center center;
+  .content {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border: solid 3px rgba(255, 255, 255, 01);
+    border-radius: 7px;
+  }
+  // End Test
   & *:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -60,6 +73,41 @@ $lighter-accent: lighten($accent-color, 30%);
     }
     &:active {
       transform: translateY(5px);
+    }
+  }
+}
+
+// Media Queries
+// Tablet
+@media screen and (max-width: 768px) {
+  #hero {
+    a {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// Mobile Large
+@media screen and (max-width: 452px) {
+  .content {
+    width: 90%;
+  }
+}
+
+// Mobile Medium
+@media screen and (max-width: 375px) {
+  #hero {
+    a {
+      font-size: 1rem;
+    }
+  }
+}
+
+// Mobile Medium
+@media screen and (max-width: 320px) {
+  #hero {
+    .content {
+      padding: 15px;
     }
   }
 }
