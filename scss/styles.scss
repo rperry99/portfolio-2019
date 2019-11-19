@@ -2,8 +2,9 @@
 $font-stack: Helvetica, sans-serif;
 $font-color: #333;
 $accent-color: #bada55;
-$darker-accent: darken($accent-color, 30%);
-$lighter-accent: lighten($accent-color, 30%);
+$darker-accent: darken($accent-color, 10%);
+$lighter-accent: lighten($accent-color, 20%);
+$navbar-height: 55px;
 
 // General Styles
 * {
@@ -19,25 +20,72 @@ $lighter-accent: lighten($accent-color, 30%);
   margin: 0 auto;
 }
 
+// Navbar
+nav {
+  a {
+    color: $font-color;
+    border-radius: 5px;
+    &:hover {
+      color: $font-color;
+      border-bottom: solid 3px $darker-accent;
+      padding-bottom: 2px;
+    }
+  }
+  .navbar-toggler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    box-sizing: border-box;
+  }
+}
+
 // Hero Section
 #hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-
-  // Test
-  background: linear-gradient(rgba(0, 0, 0, 1), transparent 99%),
+  height: calc(100vh - #{$navbar-height});
+  background: linear-gradient($font-color, transparent 100%),
     url("../img/typing.gif");
   background-size: cover;
   background-position: center center;
+
   .content {
     background: rgba(255, 255, 255, 0.9);
     padding: 50px;
     border: solid 3px rgba(255, 255, 255, 01);
     border-radius: 7px;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      background: $accent-color;
+      height: 50px;
+      width: 60%;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.5rem;
+      border: solid 3px $darker-accent;
+      border-radius: 7px;
+      transition: all 150ms ease-in-out;
+      &:visited,
+      &:link,
+      &:active {
+        color: $font-color;
+        text-decoration: none;
+      }
+      &:hover {
+        background: $lighter-accent;
+      }
+      &:active {
+        background: $darker-accent;
+        transform: translateY(2px);
+      }
+    }
   }
-  // End Test
   & *:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -47,67 +95,48 @@ $lighter-accent: lighten($accent-color, 30%);
   p {
     font-size: 1.2rem;
   }
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    background: $accent-color;
-    height: 50px;
-    width: 100%;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.5rem;
-    border: solid 3px $darker-accent;
-    border-radius: 7px;
-    transition: width 300ms ease-in-out, transform 150ms ease-in-out;
-    &:visited,
-    &:link,
-    &:active {
-      color: $font-color;
-      text-decoration: none;
-    }
-    &:hover {
-      width: 102%;
-    }
-    &:active {
-      transform: translateY(5px);
-    }
-  }
 }
 
 // Media Queries
+// Laptop
+@media screen and (max-width: 1024px) {
+  #hero {
+    .content {
+      a {
+        width: 90%;
+      }
+    }
+  }
+}
 // Tablet
 @media screen and (max-width: 768px) {
   #hero {
-    a {
-      font-size: 1.2rem;
+    .content {
+      a {
+        font-size: 1rem;
+      }
     }
   }
 }
 
 // Mobile Large
 @media screen and (max-width: 452px) {
-  .content {
+  #hero .content {
     width: 90%;
+    padding: 15px;
   }
 }
 
 // Mobile Medium
 @media screen and (max-width: 375px) {
-  #hero {
+  #hero .content {
     a {
-      font-size: 1rem;
+      font-size: 0.9rem;
+      width: 100%;
     }
   }
 }
 
 // Mobile Medium
 @media screen and (max-width: 320px) {
-  #hero {
-    .content {
-      padding: 15px;
-    }
-  }
 }
