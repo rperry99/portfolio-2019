@@ -97,9 +97,25 @@ nav {
   }
 }
 
-// About
-#about {
-  .content {
+// Footer
+footer {
+  height: 50px;
+  background: $font-color;
+  color: white;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  a {
+    color: white;
+    &:hover {
+      color: $accent-color;
+      text-decoration: none;
+    }
+    i {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -130,6 +146,13 @@ nav {
   #hero .content {
     width: 90%;
     padding: 15px;
+  }
+  footer {
+    flex-direction: column;
+    height: 120px;
+    div {
+      order: -2;
+    }
   }
 }
 
