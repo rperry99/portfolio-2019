@@ -37,6 +37,13 @@ I am using this project to practice the following:
 
 ---
 
+#### 11/19/19
+
+- Tried adding Font Awesome by adding the CSS myself but I couldn't get it to work. I am trying [Friconix]() for the first time instead.
+- Added footer with social links and make it responsive
+
+---
+
 ## Credits
 
 - Hero Background Video - [Christian Dina](https://www.pexels.com/@cristian-dina-924373) from [Pexels](https://pexels.com)

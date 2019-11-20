@@ -147,6 +147,13 @@ footer {
     width: 90%;
     padding: 15px;
   }
+  footer {
+    flex-direction: column;
+    height: 120px;
+    div {
+      order: -2;
+    }
+  }
 }
 
 // Mobile Medium
