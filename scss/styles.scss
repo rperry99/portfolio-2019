@@ -16,8 +16,19 @@ $navbar-height: 50px;
 
 // Content Container
 .content {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
+}
+h2 {
+  color: $accent-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: right;
+  background: $font-color;
+  width: 300px;
+  padding: 15px;
+  border-radius: 5px;
+  transform: translateX(-20px);
 }
 
 // Navbar
@@ -97,6 +108,30 @@ nav {
   }
 }
 
+// Contact
+#contact {
+  margin: 30px 0;
+  .content {
+    .or {
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $font-color;
+      width: 100%;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    .btn,
+    #form_message {
+      display: block;
+      width: 75%;
+      margin: 0 auto;
+    }
+  }
+}
+
 // Footer
 footer {
   height: 50px;
@@ -143,9 +178,17 @@ footer {
 
 // Mobile Large
 @media screen and (max-width: 452px) {
-  #hero .content {
+  .content {
     width: 90%;
     padding: 15px;
+  }
+  #contact {
+    .content {
+      .btn,
+      #form_message {
+        width: 100%;
+      }
+    }
   }
   footer {
     flex-direction: column;
