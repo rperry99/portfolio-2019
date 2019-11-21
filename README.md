@@ -55,6 +55,7 @@ I am using this project to practice the following:
 
 - Remove PHP and JS for contact form, it won't be much good since this isn't going to be hosted
 - Add about me section, and make it responsive
+- Add a note that the form does not actually send me an email.
 
 ---
 
