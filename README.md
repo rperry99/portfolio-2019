@@ -49,6 +49,15 @@ I am using this project to practice the following:
 - Add contact section
 - Followed tutorial on [Bootstrapious](https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form) on how to create a working contact form
 
+---
+
+#### 11/21/19
+
+- Remove PHP and JS for contact form, it won't be much good since this isn't going to be hosted
+- Add about me section, and make it responsive
+
+---
+
 ## Credits
 
 - Hero Background Video - [Christian Dina](https://www.pexels.com/@cristian-dina-924373) from [Pexels](https://pexels.com)
