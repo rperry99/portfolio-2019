@@ -44,6 +44,11 @@ I am using this project to practice the following:
 
 ---
 
+#### 11/20/19
+
+- Add contact section
+- Followed tutorial on [Bootstrapious](https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form) on how to create a working contact form
+
 ## Credits
 
 - Hero Background Video - [Christian Dina](https://www.pexels.com/@cristian-dina-924373) from [Pexels](https://pexels.com)
