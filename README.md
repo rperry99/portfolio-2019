@@ -59,6 +59,11 @@ I am using this project to practice the following:
 
 ---
 
+#### 11/22/19
+
+- Fixed some responsive issues with the hero
+- Added header to the projects section
+
 ## Credits
 
 - Hero Background Video - [Christian Dina](https://www.pexels.com/@cristian-dina-924373) from [Pexels](https://pexels.com)
