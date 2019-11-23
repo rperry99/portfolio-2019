@@ -2,7 +2,7 @@
 $font-stack: Helvetica, sans-serif;
 $font-color: #333;
 $accent-color: #bada55;
-$darker-accent: darken($accent-color, 10%);
+$darker-accent: darken($accent-color, 20%);
 $lighter-accent: lighten($accent-color, 20%);
 $navbar-height: 50px;
 $content-width: 60%;
@@ -147,6 +147,74 @@ nav {
   }
 }
 
+//Portfolio
+#portfolio {
+  .content {
+    width: $content-width;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .mountain {
+      background: url("../img/mountain.jpg");
+    }
+    .nature {
+      background: url("../img/nature.jpg");
+    }
+    .boat {
+      background: url("../img/boat.jpg");
+    }
+    .asteroids {
+      background: url("../img/asteroids.jpg");
+    }
+    .card {
+      width: 426px;
+      height: 240px;
+      background-size: cover;
+      background-position: center center;
+      color: white;
+      margin-top: 20px;
+      .info {
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 100%;
+        padding: 15px;
+        .info-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          height: 150px;
+        }
+        hr {
+          background-color: $accent-color;
+          height: 2px;
+        }
+        .card-title {
+          font-weight: bold;
+          font-size: 1.3rem;
+          text-align: center;
+        }
+        .buttons {
+          display: flex;
+          justify-content: space-around;
+          a {
+            color: $accent-color;
+            border: solid 2px $accent-color;
+            border-radius: 2px;
+            padding: 5px 0;
+            width: 150px;
+            text-align: center;
+            &:hover {
+              color: $darker-accent;
+              border-color: $darker-accent;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 // Contact
 #contact {
   .content {
@@ -210,6 +278,16 @@ footer {
       }
     }
   }
+  #portfolio {
+    .content {
+      width: 85%;
+    }
+    .card {
+      width: 320px;
+      height: 180px;
+      margin: 5px auto;
+    }
+  }
 }
 // Tablet
 @media screen and (max-width: 768px) {
@@ -242,6 +320,32 @@ footer {
           &::after {
             top: 0;
             left: -15px;
+          }
+        }
+      }
+    }
+  }
+  #portfolio {
+    .content {
+      .card {
+        .info {
+          font-size: 0.95rem;
+          .info-content {
+            height: 120px;
+            margin-top: 15px;
+          }
+          .buttons {
+            a {
+              width: 120px;
+            }
+          }
+          .title-section {
+            p {
+              margin-bottom: 5px;
+            }
+            hr {
+              margin: 0;
+            }
           }
         }
       }
@@ -300,6 +404,27 @@ footer {
       }
       a {
         text-align: center;
+      }
+    }
+  }
+  #portfolio {
+    .content {
+      .card {
+        .info {
+          .info-content {
+            margin-top: 30px;
+          }
+          .title-section {
+            p {
+              font-size: 1.1rem;
+            }
+          }
+          .buttons {
+            a {
+              width: 100px;
+            }
+          }
+        }
       }
     }
   }

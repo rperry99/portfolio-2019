@@ -30,7 +30,7 @@ nav a {
   border-radius: 5px; }
   nav a:hover {
     color: #333;
-    border-bottom: solid 3px #a8cf2d;
+    border-bottom: solid 3px #86a524;
     padding-bottom: 2px; }
 
 nav .navbar-toggler {
@@ -65,7 +65,7 @@ nav .navbar-toggler {
       text-transform: uppercase;
       font-weight: bold;
       font-size: 1.5rem;
-      border: solid 3px #a8cf2d;
+      border: solid 3px #86a524;
       border-radius: 7px;
       transition: all 150ms ease-in-out; }
       #hero .content a:visited, #hero .content a:link, #hero .content a:active {
@@ -74,7 +74,7 @@ nav .navbar-toggler {
       #hero .content a:hover {
         background: #dceca9; }
       #hero .content a:active {
-        background: #a8cf2d;
+        background: #86a524;
         transform: translateY(2px); }
     #hero .content p {
       text-align: center; }
@@ -107,6 +107,58 @@ nav .navbar-toggler {
       border-radius: 5px; }
   #about .content .about-text {
     margin-right: 20px; }
+
+#portfolio .content {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+  #portfolio .content .mountain {
+    background: url("../img/mountain.jpg"); }
+  #portfolio .content .nature {
+    background: url("../img/nature.jpg"); }
+  #portfolio .content .boat {
+    background: url("../img/boat.jpg"); }
+  #portfolio .content .asteroids {
+    background: url("../img/asteroids.jpg"); }
+  #portfolio .content .card {
+    width: 426px;
+    height: 240px;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    margin-top: 20px; }
+    #portfolio .content .card .info {
+      background-color: rgba(0, 0, 0, 0.7);
+      height: 100%;
+      padding: 15px; }
+      #portfolio .content .card .info .info-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 150px; }
+      #portfolio .content .card .info hr {
+        background-color: #bada55;
+        height: 2px; }
+      #portfolio .content .card .info .card-title {
+        font-weight: bold;
+        font-size: 1.3rem;
+        text-align: center; }
+      #portfolio .content .card .info .buttons {
+        display: flex;
+        justify-content: space-around; }
+        #portfolio .content .card .info .buttons a {
+          color: #bada55;
+          border: solid 2px #bada55;
+          border-radius: 2px;
+          padding: 5px 0;
+          width: 150px;
+          text-align: center; }
+          #portfolio .content .card .info .buttons a:hover {
+            color: #86a524;
+            border-color: #86a524;
+            text-decoration: none; }
 
 #contact .content {
   width: 60%; }
@@ -149,7 +201,13 @@ footer {
   #hero .content p {
     text-align: left; }
   #hero .content a {
-    width: 90%; } }
+    width: 90%; }
+  #portfolio .content {
+    width: 85%; }
+  #portfolio .card {
+    width: 320px;
+    height: 180px;
+    margin: 5px auto; } }
 
 @media screen and (max-width: 768px) {
   #hero .content a {
@@ -168,6 +226,17 @@ footer {
       #about .content .photo .profile-picture::after {
         top: 0;
         left: -15px; }
+  #portfolio .content .card .info {
+    font-size: 0.95rem; }
+    #portfolio .content .card .info .info-content {
+      height: 120px;
+      margin-top: 15px; }
+    #portfolio .content .card .info .buttons a {
+      width: 120px; }
+    #portfolio .content .card .info .title-section p {
+      margin-bottom: 5px; }
+    #portfolio .content .card .info .title-section hr {
+      margin: 0; }
   #contact .content {
     width: 90%; }
     #contact .content .btn,
@@ -199,7 +268,13 @@ footer {
     #hero .content p {
       margin: 0; }
     #hero .content a {
-      text-align: center; } }
+      text-align: center; }
+  #portfolio .content .card .info .info-content {
+    margin-top: 30px; }
+  #portfolio .content .card .info .title-section p {
+    font-size: 1.1rem; }
+  #portfolio .content .card .info .buttons a {
+    width: 100px; } }
 
 @media screen and (min-width: 1024px) {
   .content {
