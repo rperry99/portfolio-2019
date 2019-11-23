@@ -64,6 +64,16 @@ I am using this project to practice the following:
 - Fixed some responsive issues with the hero
 - Added header to the projects section
 
+---
+
+#### 12/23/19
+
+- Add portfolio section
+- Add content to portfolio section
+- Style the info part, which will have an animation when you hover over the project.
+
+---
+
 ## Credits
 
 - Hero Background Video - [Christian Dina](https://www.pexels.com/@cristian-dina-924373) from [Pexels](https://pexels.com)
