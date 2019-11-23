@@ -5,6 +5,7 @@ $accent-color: #bada55;
 $darker-accent: darken($accent-color, 10%);
 $lighter-accent: lighten($accent-color, 20%);
 $navbar-height: 50px;
+$content-width: 60%;
 
 // General Styles
 * {
@@ -14,7 +15,6 @@ $navbar-height: 50px;
   box-sizing: border-box;
 }
 .content {
-  width: 70%;
   margin: 0 auto;
 }
 h2 {
@@ -122,6 +122,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: $content-width;
     .profile-picture {
       position: relative;
       border: solid 9px white;
@@ -149,6 +150,7 @@ nav {
 // Contact
 #contact {
   .content {
+    width: $content-width;
     .or {
       font-size: 2rem;
       font-weight: bold;
@@ -233,6 +235,7 @@ footer {
   }
   #about {
     .content {
+      width: 90%;
       .photo {
         transform: scale(0.8);
         .profile-picture {
@@ -246,6 +249,7 @@ footer {
   }
   #contact {
     .content {
+      width: 90%;
       .btn,
       #form_message {
         width: 100%;
