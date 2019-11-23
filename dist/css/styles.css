@@ -5,7 +5,6 @@
   box-sizing: border-box; }
 
 .content {
-  width: 70%;
   margin: 0 auto; }
 
 h2 {
@@ -89,7 +88,8 @@ nav .navbar-toggler {
 #about .content {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  width: 60%; }
   #about .content .profile-picture {
     position: relative;
     border: solid 9px white; }
@@ -108,26 +108,25 @@ nav .navbar-toggler {
   #about .content .about-text {
     margin-right: 20px; }
 
-#contact .content .or {
-  font-size: 2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #333;
-  width: 100%;
-  text-align: center; }
-
-#contact .content p {
-  text-align: center; }
-
-#contact .content .btn,
-#contact .content #form_message {
-  display: block;
-  width: 75%;
-  margin: 0 auto; }
-
-#contact .content .warning {
-  color: red;
-  font-weight: bold; }
+#contact .content {
+  width: 60%; }
+  #contact .content .or {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    width: 100%;
+    text-align: center; }
+  #contact .content p {
+    text-align: center; }
+  #contact .content .btn,
+  #contact .content #form_message {
+    display: block;
+    width: 75%;
+    margin: 0 auto; }
+  #contact .content .warning {
+    color: red;
+    font-weight: bold; }
 
 footer {
   height: 50px;
@@ -162,14 +161,18 @@ footer {
   .content {
     width: 90%;
     padding: 15px; }
-  #about .content .photo {
-    transform: scale(0.8); }
-    #about .content .photo .profile-picture::after {
-      top: 0;
-      left: -15px; }
-  #contact .content .btn,
-  #contact .content #form_message {
-    width: 100%; }
+  #about .content {
+    width: 90%; }
+    #about .content .photo {
+      transform: scale(0.8); }
+      #about .content .photo .profile-picture::after {
+        top: 0;
+        left: -15px; }
+  #contact .content {
+    width: 90%; }
+    #contact .content .btn,
+    #contact .content #form_message {
+      width: 100%; }
   footer {
     flex-direction: column;
     height: 120px; }
