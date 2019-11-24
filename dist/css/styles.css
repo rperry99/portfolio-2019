@@ -108,57 +108,68 @@ nav .navbar-toggler {
   #about .content .about-text {
     margin-right: 20px; }
 
-#portfolio .content {
-  width: 60%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center; }
-  #portfolio .content .mountain {
-    background: url("../img/mountain.jpg"); }
-  #portfolio .content .nature {
-    background: url("../img/nature.jpg"); }
-  #portfolio .content .boat {
-    background: url("../img/boat.jpg"); }
-  #portfolio .content .asteroids {
-    background: url("../img/asteroids.jpg"); }
-  #portfolio .content .card {
-    width: 426px;
-    height: 240px;
-    background-size: cover;
-    background-position: center center;
-    color: white;
-    margin-top: 20px; }
-    #portfolio .content .card .info {
-      background-color: rgba(0, 0, 0, 0.7);
-      height: 100%;
-      padding: 15px; }
-      #portfolio .content .card .info .info-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 150px; }
-      #portfolio .content .card .info hr {
-        background-color: #bada55;
-        height: 2px; }
-      #portfolio .content .card .info .card-title {
-        font-weight: bold;
-        font-size: 1.3rem;
-        text-align: center; }
-      #portfolio .content .card .info .buttons {
-        display: flex;
-        justify-content: space-around; }
-        #portfolio .content .card .info .buttons a {
-          color: #bada55;
-          border: solid 2px #bada55;
-          border-radius: 2px;
-          padding: 5px 0;
-          width: 150px;
+#portfolio {
+  background: whitesmoke;
+  padding: 20px; }
+  #portfolio .content {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; }
+    #portfolio .content .mountain {
+      background: url("../img/mountain.jpg"); }
+    #portfolio .content .nature {
+      background: url("../img/nature.jpg"); }
+    #portfolio .content .boat {
+      background: url("../img/boat.jpg"); }
+    #portfolio .content .asteroids {
+      background: url("../img/asteroids.jpg"); }
+    #portfolio .content .card {
+      width: 426px;
+      height: 240px;
+      background-size: cover;
+      background-position: center center;
+      color: white;
+      margin-top: 20px;
+      position: relative;
+      overflow: hidden; }
+      #portfolio .content .card:hover .info {
+        top: 0; }
+      #portfolio .content .card .info {
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 100%;
+        width: 100%;
+        padding: 15px;
+        position: absolute;
+        top: 100%;
+        transition: all 450ms ease-in-out; }
+        #portfolio .content .card .info .info-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          height: 150px; }
+        #portfolio .content .card .info hr {
+          background-color: #bada55;
+          height: 2px; }
+        #portfolio .content .card .info .card-title {
+          font-weight: bold;
+          font-size: 1.3rem;
           text-align: center; }
-          #portfolio .content .card .info .buttons a:hover {
-            color: #86a524;
-            border-color: #86a524;
-            text-decoration: none; }
+        #portfolio .content .card .info .buttons {
+          display: flex;
+          justify-content: space-around; }
+          #portfolio .content .card .info .buttons a {
+            color: #bada55;
+            border: solid 2px #bada55;
+            border-radius: 2px;
+            padding: 5px 0;
+            width: 150px;
+            text-align: center; }
+            #portfolio .content .card .info .buttons a:hover {
+              color: #86a524;
+              border-color: #86a524;
+              text-decoration: none; }
 
 #contact .content {
   width: 60%; }
@@ -213,7 +224,9 @@ footer {
   #hero .content a {
     font-size: 1rem; }
   #about .content {
-    flex-direction: column-reverse; } }
+    flex-direction: column-reverse; }
+  #portfolio .content .card .info {
+    top: 0; } }
 
 @media screen and (max-width: 452px) {
   .content {
@@ -253,7 +266,18 @@ footer {
     font-size: 1rem;
     width: 100%; }
   #about .content .photo {
-    transform: scale(0.7); } }
+    transform: scale(0.7); }
+  #portfolio .content .card .info .buttons a {
+    width: 100px; }
+  #portfolio .content .card .info .title-section p {
+    margin-bottom: 5px;
+    font-size: 1.1rem; }
+  #portfolio .content .card .info .title-section hr {
+    margin: 0;
+    margin-bottom: 20px; }
+  #portfolio .content .boat .info .title-section hr,
+  #portfolio .content .mountain .info .title-section hr {
+    margin-bottom: 30px; } }
 
 @media screen and (max-width: 320px) {
   #hero .content {
@@ -270,11 +294,25 @@ footer {
     #hero .content a {
       text-align: center; }
   #portfolio .content .card .info .info-content {
-    margin-top: 30px; }
+    margin-top: 15px; }
+    #portfolio .content .card .info .info-content * {
+      margin: 0;
+      padding: 0; }
+    #portfolio .content .card .info .info-content p {
+      padding: 0;
+      margin: 0; }
+    #portfolio .content .card .info .info-content .buttons {
+      margin-top: 15px; }
   #portfolio .content .card .info .title-section p {
-    font-size: 1.1rem; }
+    font-size: 0.9rem; }
+  #portfolio .content .card .info .title-section hr {
+    background-color: transparent; }
   #portfolio .content .card .info .buttons a {
-    width: 100px; } }
+    width: 85px;
+    font-size: 0.85rem; }
+  #portfolio .content .boat .info .info-content,
+  #portfolio .content .mountain .info .info-content {
+    margin-top: 15px; } }
 
 @media screen and (min-width: 1024px) {
   .content {
