@@ -74,6 +74,11 @@ I am using this project to practice the following:
 
 ---
 
+#### 12/24/19
+
+- Add animation to the portfolio cards to display the links
+- Take the animation away on Tablet and smaller.
+
 ## Credits
 
 - Hero Background Video - [Christian Dina](https://www.pexels.com/@cristian-dina-924373) from [Pexels](https://pexels.com)

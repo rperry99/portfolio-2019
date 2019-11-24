@@ -149,11 +149,13 @@ nav {
 
 //Portfolio
 #portfolio {
+  background: rgb(245, 245, 245);
+  padding: 20px;
   .content {
-    width: $content-width;
+    width: 75%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     .mountain {
       background: url("../img/mountain.jpg");
@@ -174,10 +176,19 @@ nav {
       background-position: center center;
       color: white;
       margin-top: 20px;
+      position: relative;
+      overflow: hidden;
+      &:hover .info {
+        top: 0;
+      }
       .info {
         background-color: rgba(0, 0, 0, 0.7);
         height: 100%;
+        width: 100%;
         padding: 15px;
+        position: absolute;
+        top: 100%;
+        transition: all 450ms ease-in-out;
         .info-content {
           display: flex;
           flex-direction: column;
@@ -303,6 +314,15 @@ footer {
       flex-direction: column-reverse;
     }
   }
+  #portfolio {
+    .content {
+      .card {
+        .info {
+          top: 0;
+        }
+      }
+    }
+  }
 }
 
 // Mobile Large
@@ -384,6 +404,39 @@ footer {
       }
     }
   }
+  #portfolio {
+    .content {
+      .card {
+        .info {
+          .buttons {
+            a {
+              width: 100px;
+            }
+          }
+          .title-section {
+            p {
+              margin-bottom: 5px;
+              font-size: 1.1rem;
+            }
+            hr {
+              margin: 0;
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+      .boat,
+      .mountain {
+        .info {
+          .title-section {
+            hr {
+              margin-bottom: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Mobile small
@@ -412,17 +465,40 @@ footer {
       .card {
         .info {
           .info-content {
-            margin-top: 30px;
+            * {
+              margin: 0;
+              padding: 0;
+            }
+            margin-top: 15px;
+            p {
+              padding: 0;
+              margin: 0;
+            }
+            .buttons {
+              margin-top: 15px;
+            }
           }
           .title-section {
             p {
-              font-size: 1.1rem;
+              font-size: 0.9rem;
+            }
+            hr {
+              background-color: transparent;
             }
           }
           .buttons {
             a {
-              width: 100px;
+              width: 85px;
+              font-size: 0.85rem;
             }
+          }
+        }
+      }
+      .boat,
+      .mountain {
+        .info {
+          .info-content {
+            margin-top: 15px;
           }
         }
       }
