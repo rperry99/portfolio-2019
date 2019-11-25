@@ -66,7 +66,7 @@ I am using this project to practice the following:
 
 ---
 
-#### 12/23/19
+#### 11/23/19
 
 - Add portfolio section
 - Add content to portfolio section
@@ -74,10 +74,16 @@ I am using this project to practice the following:
 
 ---
 
-#### 12/24/19
+#### 11/24/19
 
 - Add animation to the portfolio cards to display the links
 - Take the animation away on Tablet and smaller.
+
+#### 11/25/19
+
+- Fix issue with links linking to the wrong pages.
+
+---
 
 ## Credits
 
